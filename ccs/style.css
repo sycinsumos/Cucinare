@@ -1,0 +1,22 @@
+.navbar-nav .nav-item .nav-link:hover{
+    color:tomato;
+}
+.carousel-caption {
+    background-color: rgba(5, 0, 0, 0.644);
+    
+}
+.hero{margin-top: 50px;}
+.subtitule {
+    color: tomato;
+}
+#multistep{
+    background-image: url("/Imagenes/tapiz.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color:rgb(235, 7, 178)
+    
+    }
+     
