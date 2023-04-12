@@ -9,16 +9,16 @@
     <!-- favicom -->
    <link rel="shortcut icon" href="Imagenes/icon.png"
 
-    <!--estilo ccs-->
+    <!--estilo ccs -->
    <link rel="stylesheet" href="./ccs/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Cucinare</title>
 </head>
 <body>
-    <div class="container">
+    <div id="home" class="container">
 
-    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top opacity-85">
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-sm-top opacity-85">
         <div class="container-fluid">
           <div><mi-5></mi-5></div>
           <img src="./Imagenes/logo.png" width="100" alt="logocucinare">
@@ -28,16 +28,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quienes somos</a>
+                <a class="nav-link" href="#Quienes somos">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Que hacemos</a>
+                <a class="nav-link" href="#Presupuestos">Presupuestos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#Contacto">Contacto</a>
               </li>
             </ul>
             <div class="ms-md-5 d-flex column-gap-3">
@@ -98,7 +98,7 @@
 
 
 <!-- aca pongo articulo principal dividido en 2 columnas-->
-<div class="container">
+<div id="Quienes somos" class="container">
 <article class="row">
   <h2 class="my-5 display-5">Quienes somos</h2>
 <div class="col-lg-8">
@@ -121,41 +121,42 @@
 </div>
 
 <!--aqui formularios-->
-<div class="container">
-  <h2 class="display-9">Enviar mensaje</h2>
-  <h4 class="text-danger-emphasis">Consulte nuestras promociones</h4>
-  <section id="multistep" class="row">
+ <div id="Presupuestos" class="container">
+       <h2 class="display-9">Enviar mensaje</h2>
+       <h4 class="text-danger-emphasis">Consulte nuestras promociones</h4>
+   <section id="multistep" class="row">
     <div class="col-sm-10 col-md-8 col-lg-6">
   
-   <form id="formulario">
+<form id="formulario" class="form" action="https://formspree.io/f/mgebpzjy"
+method="POST"> 
   
    <div class="mb-3">
-    <label for="fullName" class="form-label">Nombre</label>
-    <input type="FullName" class="form-control" id="exampleFormControlInput1">
+      <label for="fullName" class="form-label">Nombre</label>
+      <input type="FullName" class="form-control" id="exampleFormControlInput1" name="name">
    </div>
 
    <div class="mb-3">
-    <label for="phone" class="form-label">Teléfono</label>
-    <input type="phone" class="form-control" id="exampleFormControlInput1">
+      <label for="phone" class="form-label">Teléfono</label>
+      <input type="phone" class="form-control" id="exampleFormControlInput1">
    </div>
   
    <div class="mb-3">
-   <label for="email" class="form-label">Correo Electrónico</label>
-   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+     <label for="email" class="form-label">Correo Electrónico</label>
+     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
    </div>
 
    <div class="mb-5">
-   <label for="extraInfo" class="form-label">Mensaje </label>
-   <textarea id="extraInfo" class="form-control" cols="30" rows="5"></textarea>
+     <label for="extraInfo" class="form-label">Mensaje </label>
+     <textarea id="extraInfo" name="message" class="form-control" cols="30" rows="5"></textarea>
    </div>
   
 
 
 
-     <button type="button">Enviar</button>
+     <button type="submit" type="button">Enviar</button>
 
     </div>
-  </section>
+   </section>
  </div>
 </form>
 
@@ -171,19 +172,19 @@
 </div>
 
 <footer>
- <div class="container my-5"> 
-  <div class="row p-5 col-lg bg-black text-white">
+ <div id="Contacto" class="container my-5"> 
+    <div class="row p-5 col-lg bg-black text-white">
 
-  <div class="col-xs-12 col-md-6 col-lg-3">
-    <img src="./Imagenes/logo.png" width="200" alt="logo">
-  </div>
-  <div class="col-xs-12 col-md-6 col-lg-3">
-    <p class="h5">Dirección</p>
-    <p class="text-white-50">Barrio la paz
+    <div class="col-xs-12 col-md-6 col-lg-3">
+      <img src="./Imagenes/logo.png" width="200" alt="logo">
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-3">
+      <p class="h5">Dirección</p>
+      <p class="text-white-50">Barrio la paz
       casa 131
       Sector C 
       Manzana 4
-    </p>
+      </p>
   </div>
   <div class="col-xs-12 col-md-6 col-lg-3">
     <p class="h5">Horarios</p>
